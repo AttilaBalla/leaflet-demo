@@ -1,5 +1,5 @@
 import React from "react";
-import {MapPosition} from "../types";
+import {IMapPosition} from "../types";
 import {PositionListItem} from "./PositionListItem";
 import {Stack} from "@mui/material";
 import {LatLng} from "leaflet";
@@ -10,7 +10,7 @@ const styles = {
 }
 
 interface IProps {
-    positions: MapPosition[]
+    positions: IMapPosition[]
     removePosition: (name: string) => void
     setSelectedPosition: (position: LatLng) => void
 }

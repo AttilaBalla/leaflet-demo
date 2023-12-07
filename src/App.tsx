@@ -3,7 +3,7 @@ import './App.css';
 import {LeafletMap} from "./components/map/LeafletMap";
 import {Container} from "@mui/material";
 import {AppHeader} from "./components/AppHeader";
-import {MapPosition} from "./types";
+import {IMapPosition} from "./types";
 import {PositionLister} from "./components/PositionLister";
 import {LatLng} from "leaflet";
 import {getUnixTimestamp} from "./utils";
@@ -11,7 +11,7 @@ import {getUnixTimestamp} from "./utils";
 function App() {
 
     const [selectedPosition, setSelectedPosition] = useState<LatLng | null>(null)
-    const [positions, setPositions] = useState<MapPosition[]>([])
+    const [positions, setPositions] = useState<IMapPosition[]>([])
 
     const createPosition = (position: LatLng) => {
         setSelectedPosition(null)

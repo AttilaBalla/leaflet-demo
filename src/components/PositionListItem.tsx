@@ -2,7 +2,7 @@ import React from "react";
 import {Box, IconButton, Paper, Typography} from "@mui/material";
 import MyLocationIcon from '@mui/icons-material/MyLocation';
 import DeleteIcon from '@mui/icons-material/Delete';
-import {MapPosition} from "../types";
+import {IMapPosition} from "../types";
 import {LatLng} from "leaflet";
 
 const styles = {
@@ -13,7 +13,7 @@ const styles = {
 }
 
 interface IProps {
-    position: MapPosition
+    position: IMapPosition
     removePosition: (name: string) => void
     setSelectedPosition: (position: LatLng) => void
 }

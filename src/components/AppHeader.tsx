@@ -4,8 +4,8 @@ import React from "react";
 export function AppHeader() {
     return (
         <Box py={'1rem'} sx={{color: 'white'}}>
-            <Typography variant={'h5'}>Points of Interest</Typography>
-            <Typography variant={'body1'}>Click on the map to create POIs</Typography>
+            <Typography variant={'h5'}>Intermaps Code Challenge</Typography>
+            <Typography variant={'body1'}>maps are cool</Typography>
         </Box>
     )
 }
